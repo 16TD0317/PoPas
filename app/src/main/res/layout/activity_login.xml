@@ -30,7 +30,8 @@
             android:layout_height="wrap_content"
             android:text="LOGIN"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:id="@+id/login"/>
     </LinearLayout>
 </RelativeLayout>
 
