@@ -40,6 +40,7 @@ public class Login extends AppCompatActivity {
     }
     public void close(View view){
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Exit");
         alertDialogBuilder.setMessage("Are you sure do you want to exit");
         alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override

@@ -28,6 +28,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
     }
     public void close(View view){
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Exit Registration");
         alertDialogBuilder.setMessage("Are you sure do you want to exit registration");
         alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
@@ -48,7 +49,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        
+
     }
 
     @Override
