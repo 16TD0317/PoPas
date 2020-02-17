@@ -17,6 +17,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.ajgroups.popas.DataAdapter.UserAdapter;
+import com.ajgroups.popas.Database.DatabaseHandler;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -57,6 +58,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
             @Override
             public void onClick(View view) {
                 String pass, cpass;
+                DatabaseHandler dbHandler = new DatabaseHandler();
                 pass = password.getText().toString();
                 cpass= confirmPassword.getText().toString();
                 UserAdapter users = new UserAdapter();
@@ -87,6 +89,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                     Snackbar.make(view,"Please enter same password in both password and confirm password",Snackbar.LENGTH_LONG).show();
                     return;
                 }
+                dbHandler.addUsers(users,SignUp.this,SignUp.this,view);
 
 
             }
@@ -121,5 +124,25 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+    @Override
+    public void onBackPressed() {
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Exit Registration");
+        alertDialogBuilder.setMessage("Are you sure do you want to exit registration");
+        alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 }
