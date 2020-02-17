@@ -40,7 +40,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="textPersonName"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/userName"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,7 +58,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
                 android:inputType="textPersonName"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/firstName"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +77,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="textPersonName"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/lastName"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,7 +96,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="number"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/age"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -117,12 +121,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Male"
-                        android:textSize="15dp" />
+                        android:textSize="15dp"
+                        android:id="@+id/male"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Female"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp"
+                        android:id="@+id/female"/>
                 </RadioGroup>
             </LinearLayout>
             <LinearLayout
@@ -162,7 +168,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="number"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/weight"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -171,7 +178,8 @@
                 android:layout_marginLeft="30dp"
                 android:textSize="12dp"
                 android:textColor="#000000"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                />
 
             <EditText
                 android:layout_width="match_parent"
@@ -181,7 +189,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="number"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/height"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -200,7 +209,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="number"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/mobile"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -219,7 +229,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="textPassword"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/password"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -237,7 +248,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:inputType="textPassword"
-                android:paddingStart="10dp"/>
+                android:paddingStart="10dp"
+                android:id="@+id/confirmPassword"/>
 
             <Button
                 android:layout_width="match_parent"
