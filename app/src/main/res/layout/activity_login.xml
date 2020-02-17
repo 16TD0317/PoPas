@@ -17,11 +17,20 @@
         android:onClick="close">
     </androidx.appcompat.widget.Toolbar>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Username"
+            android:layout_marginLeft="30dp"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -35,17 +44,19 @@
                 android:drawablePadding="10dp"
                 android:inputType="textPersonName"
                 android:background="@drawable/rectangle_edit_text"
-                android:drawableStart="@drawable/ic_person_black_24dp"/>
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:id="@+id/userName"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enter your Username"
+            android:text="Enter your Password"
             android:layout_marginLeft="30dp"
             android:textSize="12dp"
             android:textColor="#000000"
             android:layout_marginTop="10dp"/>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,16 +71,10 @@
                 android:drawablePadding="10dp"
                 android:inputType="textPassword"
                 android:background="@drawable/rectangle_edit_text"
-                android:drawableStart="@drawable/ic_vpn_key_black_24dp"/>
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:id="@+id/password"/>
         </com.google.android.material.textfield.TextInputLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enter your Password"
-            android:layout_marginLeft="30dp"
-            android:textSize="12dp"
-            android:textColor="#000000"
-            android:layout_marginTop="10dp"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

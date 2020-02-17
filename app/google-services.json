@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1069814410639",
+    "firebase_url": "https://popas-tgexit.firebaseio.com",
+    "project_id": "popas-tgexit",
+    "storage_bucket": "popas-tgexit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069814410639:android:dc815091499d8852832ffa",
+        "android_client_info": {
+          "package_name": "com.ajgroups.popas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069814410639-uiappjobauu59pj1vvb2prej1ggdvofc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ajgroups.popas",
+            "certificate_hash": "d66f6ddb3a0a063e62d07bd07babae3bf888caf9"
+          }
+        },
+        {
+          "client_id": "1069814410639-tnjt60k4reskdqar3o5qjps5lm2vhmg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3R3265jcnr7Lkl82Rmh88IoprbICzkO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069814410639-tnjt60k4reskdqar3o5qjps5lm2vhmg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
