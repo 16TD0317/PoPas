@@ -59,7 +59,6 @@ public class Home extends AppCompatActivity {
         alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                startActivity(new Intent(Home.this,Login.class));
                 finish();
             }
         });
