@@ -83,12 +83,23 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                     Snackbar.make(view,"Please fill all the fields",Snackbar.LENGTH_LONG).show();
                     return;
                 }
+                if(users.getMobileNumber().length()!=10)
+                {
+                    Snackbar.make(view,"Enter a valid mobile number",Snackbar.LENGTH_LONG).show();
+                    return;
+                }
                 if(pass.equals(cpass)){
+                    if(pass.length()<7)
+                    {
+                        Snackbar.make(view,"Please enter a with at least 7 character",Snackbar.LENGTH_LONG).show();
+                        return;
+                    }
                     users.setPassword(pass);
                 }else{
                     Snackbar.make(view,"Please enter same password in both password and confirm password",Snackbar.LENGTH_LONG).show();
                     return;
                 }
+
                 dbHandler.addUsers(users,SignUp.this,SignUp.this,view);
 
 
